@@ -24,8 +24,12 @@ h1 {
   width: 40px;
   height: 40px;
   border: 1.005682px solid black;
-/* Por favor, se alguém puder me ajudar porque minha pagina só está aeitando esse valor de px para cprresponder a 1px ficaria grato */
 }
+
+/* Por favor, se alguém puder me ajudar
+porque minha pagina só está aeitando esse
+valor de px para cprresponder a 1px ficaria
+grato */
 
 #first {
   background-color: black;
