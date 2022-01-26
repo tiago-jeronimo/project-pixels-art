@@ -2,16 +2,21 @@ const color = document.querySelector('#color-palette');
 const pixelBoard = document.getElementById('pixel-board');
 const colorPalette = document.getElementById('color-palette');
 const clearBoardbtn = document.getElementById('clear-board');
+const inputBoardsIZE = document.getElementById('board-size');
+const inputVqv = document.getElementById('generate-board');
 let selectColor = "black";
 
-function createPixel(n){
-  for(let i=0; i<n; i+=1){
+function createPixel(n){ //cria os quadros, adiciona classe a eles e encaixa ele como filho de #pixel-board
+  pixelBoard.style.width=n*42+'px';
+  pixelBoard.style.height=n*42+'px';
+  pixelBoard.innerHTML=''
+  for(let i=0; i<n*n; i+=1){ 
   const pixel = document.createElement('div');
   pixel.className= 'pixel';
   pixelBoard.appendChild(pixel);
   }
 }
-createPixel(25);
+createPixel(5);
 
 function paintSquad(event){
   selectColor = event.target.id
@@ -35,3 +40,18 @@ function clearBoard(){
   }
 }
 clearBoardbtn.addEventListener('click', clearBoard)
+
+inputVqv.addEventListener('click', vqv )
+
+function vqv(event) {
+ console.log(inputBoardsIZE.value)
+ if(inputBoardsIZE.value === ''){
+   alert('Board inválido!')
+ } else if ( inputBoardsIZE.value <= 5){
+  createPixel(5)
+ } else if (inputBoardsIZE.value > 5 && inputBoardsIZE.value< 50){
+   createPixel(inputBoardsIZE.value)
+ } else{
+  createPixel(50)
+ }
+}

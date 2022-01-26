@@ -13,9 +13,9 @@ body {
 
 h1 {
   margin-bottom: 18px;
-  border: solid 1px black;
-  border-radius: 10px;
-  background-color: rgb(9, 9, 192);
+  color: white;
+  background-color: rgb(133, 63, 199);
+  font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .color {
