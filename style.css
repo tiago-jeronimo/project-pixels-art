@@ -3,7 +3,6 @@
   margin: 0;
   position: relative;
   text-align: center;
-  font-size: 50px;
 }
 
 body {
@@ -23,28 +22,24 @@ h1 {
   display: inline-block;
   width: 40px;
   height: 40px;
-  border: 1.005682px solid black;
+  border: 1px solid black;
 }
 
-/* Por favor, se alguém puder me ajudar
-porque minha pagina só está aeitando esse
-valor de px para cprresponder a 1px ficaria
-grato */
 
-#first {
+#black {
   background-color: black;
 }
 
-#second {
-  background-color: #fab243;
+#yellow {
+  background-color: yellow;
 }
 
-#third {
-  background-color: #429867;
+#green {
+  background-color: green;
 }
 
-#fourth {
-  background-color: #2b5166;
+#blue {
+  background-color: blue;
 }
 
 .pixel {
@@ -53,4 +48,13 @@ grato */
   width: 40px;
   height: 40px;
   border: 1px solid black;
+}
+
+#pixel-board {
+  margin: 0 auto;
+  border: 1px solid black;
+  width: 210px;
+  height: 210px;
+  display: flex;
+  flex-wrap: wrap;
 }
